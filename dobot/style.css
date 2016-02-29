@@ -1,5 +1,16 @@
 h2{color:white; font-family:Serif;}
 h3{color:#4d5354; font-family:Helvetica;}
-body{background-color:#1a2325;}
-p{color:#848889; font-family:Helvetica;}
+body{background-color:#1a2325; margin: 60px;}
+p{
+	color:#848889; 
+	font-family:Helvetica; 
+	}
 a{color:#01bfc1; text-decoration: none;}
+img{
+	float:right; 
+	padding-left: 200px; 
+	margin-bottom: 200px;}
+section{width:1200px;}
+#calendar{margin-bottom: 750px;}
+#anchor{margin-bottom:750px;}
+#stickpic{margin-bottom:100px;}
