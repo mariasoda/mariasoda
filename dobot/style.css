@@ -9,8 +9,17 @@ a{color:#01bfc1; text-decoration: none;}
 img{
 	float:right; 
 	padding-left: 200px; 
-	margin-bottom: 200px;}
-section{width:1200px;}
-#calendar{margin-bottom: 750px;}
-#anchor{margin-bottom:750px;}
-#stickpic{margin-bottom:100px;}
+	margin-bottom: 200px;
+	margin-right: 100px;}
+section{width:1300px;}
+.section{margin-bottom: 750px;}
+.stickpic{margin-bottom:100px;}
+div{
+	border: 1px solid #01bfc1;
+	text-transform: uppercase;
+	background-color: #01bfc1;
+	text-align: center;
+	height: 50px;
+	width: 120px;
+	margin: 2px;
+	}
