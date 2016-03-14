@@ -1,21 +1,47 @@
-h2{color:white; font-family:Serif;}
-h3{color:#4d5354; font-family:Helvetica;}
-body{background-color:#1a2325; margin: 60px;}
+h2{
+	color:#ffffff; 
+	font-family:QuatroSlab, serif;
+}
+
+h3{
+	color:#4d5354; 
+	font-family:Lftetica;
+}
+
+body{
+	background-color:#1a2325; 
+	margin: 60px;
+}
+
 p{
 	color:#848889; 
 	font-family:Helvetica; 
 	}
-.check{color:#01bfc1; text-decoration: none;}
+
+.check{
+	color:#01bfc1; 
+	text-decoration: none;
+}
+
 img{
 	float:right; 
 	padding-left: 200px; 
 	margin-bottom: 200px;
 	margin-right: 100px;}
-section{width:1300px;}
-.section{margin-bottom: 750px;}
-.stickpic{margin-bottom:100px;}
+section{
+	width:1300px;
+}
+
+.section{
+	margin-bottom: 750px;
+}
+
+.stickpic{
+	margin-bottom:100px;
+}
+
 div{
-	border: 1px solid #01bfc1;
+	border: 2px solid #4dd9da;
 	text-transform: uppercase;
 	background-color: #01bfc1;
 	text-align: center;
@@ -39,4 +65,3 @@ a{
 	margin-bottom:50px;
 	width:1360px;
 }
-h2{font-family:LFTEtica Book;}
