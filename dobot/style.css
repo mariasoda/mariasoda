@@ -65,7 +65,9 @@ h3{
 
 body{
 	background-color:#1a2325; 
-	margin: 60px;
+	border-top: 5px solid #F8695A;
+	margin: 0px 60px 60px 0px;
+	width: 1380px;
 }
 
 p{
@@ -75,17 +77,17 @@ p{
 	font-size: 16px;
 	line-height: 20px;
 	margin-bottom: 20px;
+	width: 350px;
 	}
 
-
 img{
-	float:right; 
-	margin: 0px 100px 200px 100px;
+	float:right;
+	padding-left: -10px;
+	padding-right: 60px;
 }
 
 section{
-	width:1300px;
-	margin-bottom: 750px;
+	width:500px;
 }
 
 .stickers{
@@ -106,19 +108,22 @@ section{
 	font-weight: SemiBold;
 	color: #ffffff;
 	font-size: 14px;
+	text-decoration: none;
 	}
 
-a{
+.check{
 	text-decoration: none;
 	color:#01bfc1; 
 	font-family: LFT Etica;
 	font-weight: Regular;
+	font-size: 16px;
 }
 
 #masthead{
-	margin-top: -60px;
+	margin-top: 0px;
 	margin-bottom: 50px;
-	width:1360px;
+	position: absolute;
+	padding-left: 60px;
 }
 
 div{
@@ -126,4 +131,15 @@ div{
 	font-size: 24px;
 	color: #ffffff;
 	margin-top: 80px;
+}
+
+.border{
+	border-top: 1px solid #31393B;
+	width:350px;
+
+}
+
+.everything{
+	border-bottom: 1px solid #31393B;
+	padding: 60px 60px 300px 60px;
 }
