@@ -93,8 +93,9 @@ section{
 	width:500px;
 }
 
-.stickers{
-	margin-bottom:50px;
+#stickers{
+	margin-bottom:10px;
+	border: none;
 }
 
 .buy{
@@ -145,5 +146,59 @@ section{
 
 .everything{
 	border-bottom: 1px solid #31393B;
-	padding: 60px 60px 300px 60px;
+	padding: 60px 60px 350px 60px;
 }
+
+@media (min-width: 300px) and (max-width: 400px){
+	h2{font-size: 18px;}
+	h3{font-size: 12px;}
+	p{font-size: 10px;}
+	img{width: 100%;}
+	section{width: 100px;}
+	.buy{font-size: 12px;
+		padding: 6px 12px 6px 12px;}
+	#logo{width: 10%;}
+	.price{font-size: 14px;}
+	.check{font-size: 9px;}
+}
+
+@media (min-width: 401px) and (max-width: 600px){
+	h2{font-size: 20px;}
+	h3{font-size: 14px;}
+	p{font-size: 12px;}
+	img{width: 200%;}
+	section{width: 200px;}
+	.buy{font-size: 14px;
+		padding: 7px 14px 7px 14px;}
+	#logo{width: 15%;}
+	.price{font-size: 16px;}
+	.check{font-size: 10px;}
+}
+
+@media (min-width: 601px) and (max-width: 800px){
+	h2{font-size: 22px;}
+	h3{font-size: 16px;}
+	p{font-size: 12px;}
+	img{width: 300%;}
+	section{width: 300px;}
+	.buy{font-size: 16px;
+		padding: 8px 16px 8px 16px;}
+	#logo{width: 20%;}
+	.price{font-size: 18px;}
+	.check{font-size: 12px;}
+}
+
+@media (min-width: 801px) and (max-width: 1000px){
+	h2{font-size: 26px;}
+	h3{font-size: 14px;}
+	p{font-size: 14px;}
+	img{width: 300%;}
+	section{width: 400px;}
+	.buy{font-size: 16px;
+		padding: 9px 18px 9px 18px;}
+	#logo{width: 25%;}
+	.price{font-size: 18px;}
+	.check{font-size: 14px;}
+}
+
+h2, h3, p, img, section{transition-duration: 1s;}
