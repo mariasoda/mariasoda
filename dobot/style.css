@@ -48,6 +48,10 @@ table {
 }
 /*start of my code*/
 
+html{
+	border-top: 5px solid #F8695A;
+}
+
 h2{
 	color:#ffffff; 
 	font-family:QuatroSlab, serif;
@@ -65,9 +69,8 @@ h3{
 
 body{
 	background-color:#1a2325; 
-	border-top: 5px solid #F8695A;
 	margin: 0px 60px 60px 0px;
-	width: 1380px;
+	max-width: 1600px;
 }
 
 p{
@@ -103,7 +106,7 @@ section{
 	line-height: 50px;
 	height: 50px;
 	width: 120px;
-	padding: 5px 10px 5px 10px;
+	padding: 10px 20px 10px 20px;
 	font-family: LFT Etica;
 	font-weight: SemiBold;
 	color: #ffffff;
@@ -117,16 +120,17 @@ section{
 	font-family: LFT Etica;
 	font-weight: Regular;
 	font-size: 16px;
+	padding-bottom: 20px;
 }
 
-#masthead{
+#logo{
 	margin-top: 0px;
-	margin-bottom: 50px;
+	padding-bottom: 100px;
 	position: absolute;
 	padding-left: 60px;
 }
 
-div{
+.price{
 	font-family: QuatroSlab, serif;
 	font-size: 24px;
 	color: #ffffff;
@@ -136,7 +140,7 @@ div{
 .border{
 	border-top: 1px solid #31393B;
 	width:350px;
-
+	
 }
 
 .everything{
