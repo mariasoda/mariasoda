@@ -93,9 +93,21 @@ section{
 	width:500px;
 }
 
+#sectionone{
+	padding-top: 75px;
+}	
+
+#imgone{
+	padding-top: 75px;
+}
+
 #stickers{
-	margin-bottom:10px;
+	padding-bottom:0px;
 	border: none;
+}
+
+#stickpic{
+	padding-bottom: 0px;
 }
 
 .buy{
@@ -141,64 +153,83 @@ section{
 .border{
 	border-top: 1px solid #31393B;
 	width:350px;
-	
+	margin-top: 40px;	
 }
 
 .everything{
 	border-bottom: 1px solid #31393B;
-	padding: 60px 60px 350px 60px;
+	padding: 60px 60px 500px 60px;
 }
 
-@media (min-width: 300px) and (max-width: 400px){
+@media (min-width: 300px) and (max-width: 640px){
 	h2{font-size: 18px;}
 	h3{font-size: 12px;}
-	p{font-size: 10px;}
-	img{width: 100%;}
-	section{width: 100px;}
+	p{font-size: 11px;
+		width: 200px;}
+	img{width: 100%;
+		float: none;
+		padding-bottom: 10px;}
+	section{width: 200px;}
 	.buy{font-size: 12px;
 		padding: 6px 12px 6px 12px;}
-	#logo{width: 10%;}
+	#logo{width: 13%;}
 	.price{font-size: 14px;}
-	.check{font-size: 9px;}
+	.check{font-size: 11px;}
+	.everything{padding-bottom: 10px;}
+	.border{width: 150px;}
+	section{padding-top: 20px;}
+	#sectionone{padding-top: 20px;}
+	#imgone{padding-top: 50px;}
 }
 
-@media (min-width: 401px) and (max-width: 600px){
+@media (min-width: 641px) and (max-width: 800px){
 	h2{font-size: 20px;}
 	h3{font-size: 14px;}
 	p{font-size: 12px;}
-	img{width: 200%;}
+	img{width: 110%;
+		float: none;}
 	section{width: 200px;}
 	.buy{font-size: 14px;
 		padding: 7px 14px 7px 14px;}
 	#logo{width: 15%;}
 	.price{font-size: 16px;}
-	.check{font-size: 10px;}
-}
-
-@media (min-width: 601px) and (max-width: 800px){
-	h2{font-size: 22px;}
-	h3{font-size: 16px;}
-	p{font-size: 12px;}
-	img{width: 300%;}
-	section{width: 300px;}
-	.buy{font-size: 16px;
-		padding: 8px 16px 8px 16px;}
-	#logo{width: 20%;}
-	.price{font-size: 18px;}
 	.check{font-size: 12px;}
+	.everything{padding-bottom: 20px;}
 }
 
 @media (min-width: 801px) and (max-width: 1000px){
+	h2{font-size: 22px;}
+	h3{font-size: 16px;}
+	p{font-size: 14px;
+		width: 200px;}
+	img{width: 50%;
+		float: right;
+		padding-bottom: 20px;}
+	section{width: 300px;}
+	.buy{font-size: 16px;
+		padding: 8px 16px 8px 16px;}
+	#logo{width: 7%;}
+	.price{font-size: 18px;}
+	.check{font-size: 14px;}
+	.everything{padding-bottom: 30px;}
+	.border{width: 200px;
+			margin-top: 30px;}
+}
+
+@media (min-width: 1001px) and (max-width: 1300px){
 	h2{font-size: 26px;}
 	h3{font-size: 14px;}
-	p{font-size: 14px;}
-	img{width: 300%;}
+	p{font-size: 15px;
+		width: 250px;}
+	img{width: 60%;}
 	section{width: 400px;}
 	.buy{font-size: 16px;
 		padding: 9px 18px 9px 18px;}
-	#logo{width: 25%;}
+	#logo{width: 8%;}
 	.price{font-size: 18px;}
-	.check{font-size: 14px;}
+	.check{font-size: 15px;}
+	.everything{padding-bottom: 40px;}
+	.border{width: 200px;}
 }
 
 h2, h3, p, img, section{transition-duration: 1s;}
