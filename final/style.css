@@ -59,59 +59,73 @@ table {
 	padding: 20px 10px 20px 20px;
 }
 
+#name:hover{
+	color: #ffe6ff;
+}
+
 nav{
 	position: fixed;
-    top: 20px;
-    left: 75%;
+    top: 15%;
+    left: 5%;
 }
 
 a{
 	text-decoration: none;
-	background-color: #e6e6ff;
-	color: #66ccff;
+	background-color: #3333ff;
+	color: #ffffff;
 	font-family: sans-serif;
 	font-size: 20px;
 	padding: 4px;
-	display: inline-block;
-	top: 10px;
-	right: 10px;
+	display: block;
 }
 
 a:hover{
-	color: #0077b3;
+	color: #EEEDED;
+}
+
+#blue{
+	background-color: #3333ff;
+	width: 10%;
+	position: absolute;
+	top: 0px;
+	bottom: 0px;
+	left: 3%;
 }
 
 .slide{
-	width: 1000px;
+	width: 1150px;
 	position: fixed;
-	right: 10%;
-	top: 20%;
+	right: 0px;
 }
 
 .links{
 	position: fixed;
-	left: 50%;
+	left: 5%;
 	bottom: 5%;
 }
 .social{
 	display: inline-block;
-	background-color: #e6e6ff;
-	width: 42px;
-	height: 42px;
+	background-color: #ffffff;
+	width: 30px;
+	height: 30px;
 	border-radius: 50%;
 	position: relative;
 }
 
 .social:hover{
-	background-color: #0077B5;
+	background-color: #ffe6ff;
 }
-
 
 #in{
 	position: absolute;
 	left: 6px;
+	top: 5px;
+	width: 25px;
 }
 
 #behance{
 	position: absolute;
+	width: 25px;
+	left: 6px;
+	top: 5px;
 }
