@@ -127,6 +127,7 @@ nav{
 #git{
 	position: absolute;
 	width: 31px;
+	top: -1px;
 }
 
 @media (min-width: 200px) and (max-width: 640px){

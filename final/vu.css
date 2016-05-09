@@ -81,7 +81,7 @@ nav{
 
 #blue{
 	background-color: #3333ff;
-	width: 15%;
+	width: 215px;
 	position: absolute;
 	top: 0px;
 	bottom: 0px;
@@ -95,6 +95,12 @@ nav{
 .body{
 	width: calc(100% - 215px);
 	margin-left: 216px;
+}
+
+.body:nth-child(odd) {
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-top: 10%;
 }
 
 p{
@@ -163,13 +169,10 @@ iframe{
 	.slide{width: 100%; bottom:55%; float: none;}
 	.sidebar{display: inline-block;}
 	nav{top:8%;}
-	.links{top:15%; right: 5%;}
-
+	.links{bottom:5%; right: 50%;}
 }
 
 @media (min-width: 641px) and (max-width: 823px){
-	#name{padding-left: 15px; font-size: 20px;}
-	.sidebar{font-size: 14px;}
 	.social{width: 25px; height: 25px;}
 	#in{width: 20px;}
 	#behance{width: 20px;}
@@ -177,6 +180,5 @@ iframe{
 }
 
 @media (min-width: 824px) and (max-width: 982px){
-	#name{font-size: 24px;}
-	.sidebar{font-size: 16px;}
+
 }
