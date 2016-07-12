@@ -68,7 +68,7 @@ table {
 
 nav{
 	position: fixed;
-    top: 15%;
+    top: 13%;
     left: 2%;
     padding-left: 2px;
 }
@@ -90,6 +90,10 @@ nav{
 
 #name:hover, .sidebar:hover{
 	color: #ffccff;
+}
+
+#name:hover{
+	
 }
 
 .slide{
