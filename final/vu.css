@@ -134,7 +134,7 @@ iframe{
 }
 .social{
 	display: inline-block;
-	background-color: #ffffff;
+	background-color: #000000;
 	width: 30px;
 	height: 30px;
 	border-radius: 50%;
@@ -166,7 +166,6 @@ iframe{
 
 @media (min-width: 200px) and (max-width: 640px){
 	#blue{width: 100%; bottom: 85%;}
-	.slide{width: 100%; bottom:55%; float: none;}
 	.sidebar{display: inline-block;}
 	nav{top:8%;}
 	.links{bottom:5%; right: 50%;}

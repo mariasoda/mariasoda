@@ -58,10 +58,10 @@ table {
 #name{
 	color: #ffffff;
 	font-family: sans-serif;
-	font-size: 32px;
+	font-size: 22px;
     top: 4%;
     left: 5%;
-    margin-top: 0px;
+    margin-top: 10px;
 	position: absolute;
 	padding: 0px 10px 0px 20px;
 }
@@ -84,7 +84,7 @@ nav{
 	width: 215px;
 	position: absolute;
 	top: 0px;
-	bottom: 0px;
+	bottom: 80%;
 	left: 0%;
 }
 
@@ -99,6 +99,11 @@ nav{
 	float: right;
 }
 
+a{
+	font-size: 36px;
+	color: #000;
+}
+
 /*footer*/
 
 .links{
@@ -108,7 +113,7 @@ nav{
 }
 .social{
 	display: inline-block;
-	background-color: #f2f2f2;
+	background-color: #000000;
 	width: 30px;
 	height: 30px;
 	border-radius: 50%;

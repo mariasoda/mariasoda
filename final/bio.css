@@ -81,14 +81,14 @@ nav{
 
 #blue{
 	background-color: #3333ff;
-	width: 15%;
+	width: 215px;
 	position: absolute;
 	top: 0px;
 	bottom: 0px;
 	left: 0%;
 }
 
-#name:hover, .sidebar:hover, .contact:hover{
+#name:hover, .sidebar:hover, .contact:hover, a:hover{
 	color: #ffccff;
 }
 
@@ -100,6 +100,13 @@ nav{
 }
 
 /*body*/
+
+a{
+	text-decoration: none;
+	font-size: 11px;
+	font-family: sans-serif;
+}
+
 .bio{
 	width: calc(100% - 215px);
     margin-left: 216px;
@@ -108,11 +115,17 @@ nav{
     display: inline-block;
 }
 
-#biopic{
+.biopic{
 	width: 5%px;
 	left: 20%;
 	top: 10%;
 	width: 35%;
+}
+
+.biopic:nth-child(odd) {
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-top: 10%;
 }
 
 
@@ -158,7 +171,7 @@ h3{
 }
 .social{
 	display: inline-block;
-	background-color: #ffffff;
+	background-color: #000000;
 	width: 30px;
 	height: 30px;
 	border-radius: 50%;
@@ -190,17 +203,16 @@ h3{
 }
 
 @media (min-width: 200px) and (max-width: 640px){
-	#blue{width: 100%; bottom: 85%;}
-	.slide{width: 100%; bottom:55%; float: none;}
+	#name{left: -5px; padding-top: 10px;}
+	.sidebar{font-size: 18px;}
+	#blue{width: 100%; bottom: 85%; padding-bottom: 95px;}
+	.slide{width: 100%; bottom:55%; float: none; top: calc(100% - 215px);}
 	.sidebar{display: inline-block;}
 	nav{top:8%;}
-	.links{top:15%; right: 5%;}
-
+	.links{bottom:5%; right: 50%;
 }
 
 @media (min-width: 641px) and (max-width: 823px){
-	#name{padding-left: 15px; font-size: 20px;}
-	.sidebar{font-size: 14px;}
 	.social{width: 25px; height: 25px;}
 	#in{width: 20px;}
 	#behance{width: 20px;}
@@ -208,6 +220,5 @@ h3{
 }
 
 @media (min-width: 824px) and (max-width: 982px){
-	#name{font-size: 24px;}
-	.sidebar{font-size: 16px;}
+
 }

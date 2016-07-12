@@ -52,12 +52,11 @@ table {
 	text-decoration: none;
 	background-color: #3333ff;
 	color: #ffffff;
-	font-family: sans-serif;
+	font-family: "adelle-sans", sans-serif ;
 }
 
 #name{
 	color: #ffffff;
-	font-family: sans-serif;
 	font-size: 32px;
     top: 4%;
     left: 2%;
@@ -67,9 +66,9 @@ table {
 }
 
 nav{
-	position: fixed;
-    top: 15%;
-    left: 2%;
+	position: absolute;
+    top: 100px;
+    left: 20px;
     padding-left: 2px;
 }
 
@@ -110,7 +109,7 @@ nav{
 .imagelink{
 	width: 35%;
 	display: inline-block;
-	font-family: sans-serif;
+	font-family: "adelle-sans", sans-serif;
 	text-decoration: none;
 }
 
@@ -134,7 +133,7 @@ nav{
 }
 .social{
 	display: inline-block;
-	background-color: #ffffff;
+	background-color: #000000;
 	width: 30px;
 	height: 30px;
 	border-radius: 50%;
@@ -165,11 +164,25 @@ nav{
 	top: -1px;
 }
 
-@media (min-width: 200px) and (max-width: 640px){
-	#blue{width: 100%; bottom: 85%;}
-	.slide{width: 100%; bottom:55%; float: none;}
+@media (min-width: 1px) and (max-width: 400px){
+	.images{width: 85%; margin: 150px 0px 50px 0px;}
+	.imagelink{display: block; width: 100%; margin-right: 10px;}
+	#name{left: -5px; padding-top: 10px;}
+	.sidebar{font-size: 18px;}
+	#blue{width: 100%; bottom: 85%; padding-bottom: 95px;}
+	nav{position: absolute; top: 55px; left: 10px; padding-bottom: 95px;}
+	.slide{width: 100%; bottom:55%; float: none; top: calc(100% - 215px);}
 	.sidebar{display: inline-block;}
-	nav{top:8%;}
+	.links{bottom:5%; left: 40%; position: relative;}
+}
+@media (min-width: 401px) and (max-width: 640px){
+	.images{width: 100%; margin: 150px 0px 0px 0px;}
+	#name{left: -5px; padding-top: 10px;}
+	.sidebar{font-size: 18px;}
+	#blue{width: 100%; bottom: 85%; padding-bottom: 95px;}
+	.slide{width: 100%; bottom:55%; float: none; top: calc(100% - 215px);}
+	.sidebar{display: inline-block;}
+	nav{top:55px; left: 10px;}
 	.links{bottom:5%; right: 50%;}
 }
 
