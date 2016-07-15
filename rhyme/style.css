@@ -59,8 +59,8 @@ div,p{
 
 div{
 	width: 100%;
-	height: 400px;
 	padding: 50px;
+	height: 700px;
 }
 
 #one{
@@ -94,18 +94,56 @@ button:hover{
 	background-color: #ff8095
 	}
 
+#baa{
+	display: none;
+}
+
 #two{
 	background-image: url("./images/cutie.jpg");
 	background-size: cover;
 	color: white;
 }
  #ptwo{
- 	background-color: pink;
+ 	background-color: #fdcef9;
  	width: 400px;
  	padding: 20px;
+
  }
 
+ #three{
+ 	background-color: #ccffff;
+ }
 
+#four{
+	background-color: #ffffcc;
+}
 
+#pfour{
+	text-align: right;
+}
 
+#school{
+	display: none;
+}
+
+#appear:hover{
+	color: pink;
+}
+
+#five{
+	background-color: #e6e6ff;
+}
+
+#gif{
+	padding-top: 90px;
+	width: 800px;
+}
+
+#end{
+	color: #6D73D5;
+	font-weight: bold;
+	font-size: 42px;
+	text-align: center;
+	padding-top: 30px;
+}
 
