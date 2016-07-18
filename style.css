@@ -49,65 +49,120 @@ table {
 
 /*---------------------------------------*/
 
+body{
+	font-family: Arial;
+}
+
+div,p{
+	font-size: 20px;
+}
+
 div{
-	width: 100%;
-	height: 480px;
-	padding-top: 300px;
-	font-size: 16px;
-	color: white;
-	text-align: center;
-	background-size: cover;
-	background-color: #29a329;
-	font-family: Georgia;
+	padding: 70px 50px 50px 50px;
+	height: 700px;
 }
 
 #one{
-	color: black;}
-
-
-#one:hover{
-	background-color: #ffbf00;
-	transition-duration: 2.5s;
+	font-weight: Bold;
+	text-align: center;
+	background-color: #ccffe6;
+	font-size: 42px;
+	color: pink;
 }
 
-#two{
-	background-image: url("./images/flower.jpg");
-	background-repeat: no-repeat;
+#user-name{
+	margin-top: 30px;
+}
+
+#friend-name{
+	margin-bottom: 20px;
+}
+
+button{
+	background-color: pink;
+	color: #FFF;
+	border-radius: 0;
+	border: none;
+	padding: 5px 10px;
+	margin: 5px;
+	font-weight: Bold;
+	letter-spacing: 1.25px;
+}
+
+button:hover{
+	background-color: #ff8095
+	}
+
+#lambpic{
+	height: 350px;
+}	
+
+#baa{
+
 }
 
 
-#three:hover{
-	background-color: black;
-	transition-duration: 5s;
+ #ptwo{
+ 	padding: 20px 20px 80px 20px;
+ 	text-align: center;
+ 	left: 50%;
+ 	display: none;
+
+ }
+
+#snow{
+	display: none;
 }
+
+#lambtwo, #followed, #appear{
+	color: #FFC0CB;
+	cursor: pointer;
+}
+
+ #three{
+ 	background-color: #ccffff;
+ }
+
+ #hooves{
+ 	width: 100%;
+ 	display: none;
+ }
 
 #four{
-	background-color: #1a001a;
+	background-color: #ffffcc;
 }
 
-#four:hover{
-	background-color: #ffcc99;
-	transition-duration: 5s;
-}
-#five{
-	background-image: url("./images/frost.jpg");
-
+#pfour{
+	text-align: right;
 }
 
-#six, #me{
-	padding: 10px;
-	height: 10px;
-}
-
-#six{
-	background-color: black;
-	font-size: 32px;
+#school{
 	display: none;
-	font-size: 16px;
 }
 
-#me{
-	font-size: 8px;
-	background-color: white;
-	color: black;
+
+#five{
+	background-color: #e6e6ff;
 }
+
+
+
+#gif{
+	padding-top: 90px;
+	width: 800px;
+}
+
+#end{
+	color: #6D73D5;
+	font-weight: bold;
+	font-size: 42px;
+	text-align: center;
+	padding-top: 30px;
+	display: none;
+}
+
+#last, #love{	
+	cursor: pointer;
+	color: #6D73D5;
+}
+
