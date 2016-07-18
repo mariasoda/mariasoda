@@ -58,8 +58,7 @@ div,p{
 }
 
 div{
-	width: 100%;
-	padding: 50px;
+	padding: 70px 50px 50px 50px;
 	height: 700px;
 }
 
@@ -94,24 +93,39 @@ button:hover{
 	background-color: #ff8095
 	}
 
+#lambpic{
+	height: 350px;
+}	
+
 #baa{
-	display: none;
+
 }
 
-#two{
-	background-image: url("./images/cutie.jpg");
-	background-size: cover;
-	color: white;
-}
+
  #ptwo{
- 	background-color: #fdcef9;
- 	width: 400px;
- 	padding: 20px;
+ 	padding: 20px 20px 80px 20px;
+ 	text-align: center;
+ 	left: 50%;
+ 	display: none;
 
  }
 
+#snow{
+	display: none;
+}
+
+#lambtwo, #followed, #appear{
+	color: #FFC0CB;
+	cursor: pointer;
+}
+
  #three{
  	background-color: #ccffff;
+ }
+
+ #hooves{
+ 	width: 100%;
+ 	display: none;
  }
 
 #four{
@@ -126,13 +140,12 @@ button:hover{
 	display: none;
 }
 
-#appear:hover{
-	color: pink;
-}
 
 #five{
 	background-color: #e6e6ff;
 }
+
+
 
 #gif{
 	padding-top: 90px;
@@ -145,5 +158,11 @@ button:hover{
 	font-size: 42px;
 	text-align: center;
 	padding-top: 30px;
+	display: none;
+}
+
+#last, #love{	
+	cursor: pointer;
+	color: #6D73D5;
 }
 
