@@ -13,7 +13,7 @@ app.use(function(req, res, next) {
 
 app.get("/retrieve", function(req, res){ //When the server is told to get the root path, do the following function
     console.log("Returning current price: " + num(carPrice).format('0,0')); //Print the starting price to the console, formatted with commas
-    res.send(num); //Sends the text in the parentheses to the page requesting the "/retrieve" path
+    res.send(num(carPrice).format('0,0')); //Sends the text in the parentheses to the page requesting the "/retrieve" path
 });//Close the function for the event handler
 
 app.get("/add", function(req, res){ //When the server is told get the path "/add", do the function
@@ -34,5 +34,5 @@ app.listen(3000, function () { //Listen to the port 3000, so that when we go to 
 function confirmCarPriceChange(res)
 {
   console.log("Adjusted car price"); //Prints to the terminal that you are adjusting the price
-  res.send(num); //Sends the text in the parentheses to the page requesting whichever path the function is under
+  res.send(num(carPrice).format('0,0')); //Sends the text in the parentheses to the page requesting whichever path the function is under
 }

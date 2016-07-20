@@ -3,7 +3,48 @@
         <title>API Example</title>
 
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
-        <script src="./node.js"></script>
+        <script>
+        	$(document).ready(function(){ //When the document is ready, let's do the following.
+
+        		callRetrieve(); //Run the callRetrieve function.
+
+        		$("#price_up").click(callAdd); //when we click the price_up button, run the function called callAdd()
+        		$("#price_down").click(callSubtract); //when we click the price_down button, run the function called callSubtract()
+
+        	});
+
+        	function callRetrieve() 
+        	{
+        		//Make a call to the localhost API for the current price.
+        		$.ajax({
+        			url: "http://localhost:3000/retrieve", 
+        			success: parseResponse //when the response is successful, parse the response data
+        		});
+        	}
+
+        	function callAdd()
+        	{
+        		//Make a call to the localhost API to increase the current price.
+        		$.ajax({
+        			url: "http://localhost:3000/add",
+        			success: parseResponse //when the response is successful, parse the response data
+        		});
+        	}
+
+        	function callSubtract()
+        	{
+        		//Make a call to the localhost API to decrease the current price.
+        		$.ajax({
+        			url: "http://localhost:3000/subtract",
+        			success: parseResponse //when the response is successful, parse the response data
+        		});
+        	}
+
+        	function parseResponse(data)
+        	{
+        		$("#current_price").text(data); //Update the current price value in the current_price div
+        	}
+        </script>
 
 </head>
 <body>
