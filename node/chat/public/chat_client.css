@@ -48,7 +48,7 @@ body
 form
 {
 	position: fixed;
-	bottom: 20px;
+	bottom: 100px;
 	left: 1%;
 	right: 5px;
 	height: 30px;
@@ -64,7 +64,7 @@ form #chat-input
 {
 	border: none;
 	padding: 10px;
-	width: 90%;
+	width: 40%;
 
 }
 
@@ -84,6 +84,13 @@ form #chat-input
 
 }
 
-@media (min-width: 200px) and (max-width: 730px){
-	#chat-input{width: 80%;}
+#poke-number{
+	padding: 5px;
+	width: 70px;
+
 }
+
+
+
+
+

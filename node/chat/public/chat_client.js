@@ -2,7 +2,7 @@ $(document).ready(function(){
 
 	var socket =io("http://localhost:3000");
 
-$("#chat-start").click(function(){
+$("#history").click(function(){
 	$.ajax({
 		url:"http://localhost:3000/get_archive/",
 		success: function(data){
@@ -27,10 +27,21 @@ $("#chat-start").click(function(){
 		messageObject.username = $("#chat-name").val();
 		messageObject.text = $("#chat-input").val();
 
-		socket.emit("chat message", messageObject, $("#chat-input").val());
+		socket.emit("chat message", messageObject, $("#chat-input").val()),
 		$("#chat-input").val("");
 		return false;
 	});
+
+	$("#poke-submit").submit(function(){
+		var numberObject ={};
+		numberObject.username = $("#chat-name").val();
+		numberObject.number = $("#poke-number").val();
+
+		socket.emit("poke number", numberObject, $("#poke-number").val(),
+			$("#poke-number").val(""));
+			return false;
+			});
+
 
 	socket.on('chat message', function(msg){
 		if(msg.username == $("#chat-name").val())
@@ -42,4 +53,12 @@ $("#chat-start").click(function(){
 	}
 
 	});
+
+
 });
+
+
+
+
+
+
