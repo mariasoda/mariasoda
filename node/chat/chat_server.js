@@ -19,41 +19,31 @@ app.get('/', function(req, res) {
 
 io.on('connection', function(socket){
 	console.log("New Client Connection");
+
+
 	socket.on("chat message", function(msg){
 		ChatArchive.push(msg);
 		io.emit('chat message', msg);
 	});
 
-    socket.on('poke message', function(msg){
+    socket.on('chat message', function(msg){
 
-      var pokeNum = "#poke-number"
 
-      request("http://pokeapi.co/api/v2/pokemon") + pokeNum + "&type=id", function(err, resp, body){
+      var msgSize=msg.text.length;
 
-        body = JSON.parse(body);
-        console.log(body);
 
-        if(body.pokemon.number <= 723){
-          msg.username = "Chat Bot";
-          msg.text = "No Pokemon with index number " + pokeNum;
-          io.emit("chat message", msg);
-          chat.push(msg);
-        }else{
-          $.ajax({
-            type: "GET",
-            url: "http://pokeapi.co/api/v2/pokemon",
-            data: {id: pokeNum,
-            name: "",
-          },
-          success: ajaxHandler
-          });
+      request("http://pokeapi.co/api/v2/pokemon") + msgSize + "&type=id", function(){
 
-          
+        if(msgSize >= 723){
+            msgSize= math.floor(math.random()*(723-0)+0);
+        }
+
+
           msg.text = 
-          io.emit("poke message", msg);
+          io.emit("chat message", msg);
+          console.log(msgSize);
           chat.push(msg);
         }
-      }
 
     });
 

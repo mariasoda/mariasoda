@@ -32,16 +32,6 @@ $("#history").click(function(){
 		return false;
 	});
 
-	$("#poke-submit").submit(function(){
-		var numberObject ={};
-		numberObject.username = $("#chat-name").val();
-		numberObject.number = $("#poke-number").val();
-
-		socket.emit("poke number", numberObject, $("#poke-number").val(),
-			$("#poke-number").val(""));
-			return false;
-			});
-
 
 	socket.on('chat message', function(msg){
 		if(msg.username == $("#chat-name").val())
