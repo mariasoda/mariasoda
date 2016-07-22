@@ -1,10 +1,10 @@
 $(document).ready(function(){
 
-	var socket =io("http://localhost:3000");
+	var socket =io();
 
 $("#history").click(function(){
 	$.ajax({
-		url:"http://localhost:3000/get_archive/",
+		url:"get_archive/",
 		success: function(data){
 			$("#chat-log ul li").remove();
 			for(var i=0;i<data.length;i++)

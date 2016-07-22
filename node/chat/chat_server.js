@@ -2,6 +2,7 @@ var express = require('express');
 var app = express();
 var http = require('http').Server(app);
 var io = require('socket.io')(http);
+var request = require('request');
 
 var ChatArchive = [];
 
@@ -21,29 +22,23 @@ io.on('connection', function(socket){
 	console.log("New Client Connection");
 
 
-	socket.on("chat message", function(msg){
-		ChatArchive.push(msg);
-		io.emit('chat message', msg);
-	});
 
     socket.on('chat message', function(msg){
 
 
       var msgSize=msg.text.length;
-
-
-      request("http://pokeapi.co/api/v2/pokemon") + msgSize + "&type=id", function(){
-
         if(msgSize >= 723){
             msgSize= math.floor(math.random()*(723-0)+0);
         }
 
+      request("http://pokeapi.co/api/v2/pokemon/" + msgSize , function(err, resp, body){
 
-          msg.text = 
+        body=JSON.parse(body);
+          msg.text = body.name;
           io.emit("chat message", msg);
           console.log(msgSize);
-          chat.push(msg);
-        }
+          ChatArchive.push(msg);
+        });
 
     });
 
