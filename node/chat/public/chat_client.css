@@ -10,8 +10,17 @@ body
 	padding: 5px;
 }
 
-#history{
+button{
+	margin-left: 10px;
+	font-weight: bold;
+	color: #FFF;
+	background-color: #b30000;
+	border: none;
+	padding: 5px;
+}
 
+#history:hover{
+	background-color: #e60000;
 }
 
 #chat-log
@@ -25,24 +34,30 @@ body
 	left: 1%;
 	right: 1%;
 	overflow-y: scroll;
-		min-height: 60px;
+	min-height: 60px;
+	font-size: 16px;
 }
 
 #chat-log ul
 {
 	list-style: none;
 	margin: 0;
-	padding: 0;
+	padding: 10px;
+	text-align: left;
 }
 
 #chat-log ul li
 {
 	padding: 10px;
+	background-color: #ffffb3;
+	border-radius: 15px;
+	margin-bottom: 10px;
 }
 
 #chat-log ul li.them-line
 {
-	background-color: #CCC;
+	background-color: #b3e0ff;
+	border-radius: 15px;
 }
 
 form
@@ -65,22 +80,6 @@ form #chat-input
 	border: none;
 	padding: 10px;
 	width: 40%;
-
-}
-
-#send-button{
-	width: 65px;
-	background-color: #00b300;
-	border: none;
-	padding: 10px;
-	border-radius: 14px;
-	font-weight: Bold;
-	color: white;
-}
-
-#send-button:hover{
-	background-color: #00ff00;
-	color: black;
 
 }
 

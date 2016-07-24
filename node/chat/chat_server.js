@@ -13,11 +13,6 @@ app.use(function(req, res, next) {
   next();
 });
 
-
-app.get('/', function(req, res) {
-  res.send('Hey, nerds!!');
-});
-
 io.on('connection', function(socket){
 	console.log("New Client Connection");
 
