@@ -48,81 +48,100 @@ table {
 }
 /*start of my code*/
 
+body{
+	font-family: Usual;
+}
 .sidebar, #name{
 	text-decoration: none;
 	background-color: #3333ff;
 	color: #ffffff;
-	font-family: "adelle-sans", sans-serif ;
 }
 
 #name{
 	color: #ffffff;
-	font-size: 32px;
-    top: 4%;
-    left: 2%;
-    margin-top: 0px;
+	font-size: 20px;
+    top: 15px;
+    left: 2px;
+    margin-top: 10px;
 	position: absolute;
 	padding: 0px 10px 0px 20px;
 }
 
 nav{
 	position: absolute;
-    top: 100px;
+    top: 60px;
     left: 20px;
-    padding-left: 2px;
 }
 
 .sidebar{
-	font-size: 20px;
+	font-size: 18px;
 	padding: 4px;
 	display: block;
 }
 
 #blue{
 	background-color: #3333ff;
-	width: 215px;
+	width: 190px;
+	height: 190px;
 	position: absolute;
 	top: 0px;
-	bottom: 0px;
 	left: 0%;
 }
 
-#name:hover, .sidebar:hover, .title:hover{
+#name:hover, .sidebar:hover{
 	color: #ffccff;
 }
 
 /*body*/
 
+#hundred{
+	background-image: src=("file:///images/100.jpg");
+	width: 200px;
+	background-repeat: none;
+}
+
+.container{
+	padding-left: 130px;
+}
+
+#work{
+	padding-left: 250px;
+}
+
 .images{
-	width: calc(100% - 215px);
-	margin-left: 216px;
+	margin-left: 250px;
 }
 
 .portfolio{
 	width: 100%;
+	border: .25px solid gray;
 }
 
 .portfolio:hover{
-	opacity: .5;
+
 }
 
 .imagelink{
 	width: 35%;
 	display: inline-block;
-	font-family: "adelle-sans", sans-serif;
 	text-decoration: none;
 }
 
 .imagelink:nth-child(odd) {
-  margin-left: 10%;
+  margin-left: 45px;
   margin-right: 10%;
-  margin-top: 10%;
+  margin-top: 60px;
 }
 
 .title{font-size: 14px;
     line-height: 1.5em;
     color: #000;
-    text-align: center;}
+    text-align: center;
+}
+
+.title:hover{
+	display: block;
+}
 
 /*footer*/
 
@@ -165,22 +184,20 @@ nav{
 }
 
 @media (min-width: 1px) and (max-width: 400px){
-	.images{width: 85%; margin: 150px 0px 50px 0px;}
-	.imagelink{display: block; width: 100%; margin-right: 10px;}
+	.images{width: 85%; margin: 100px 0px 50px 0px; padding: 20px;}
+	.imagelink{display: block; width: 100%;}
+	.imagelink:nth-child(odd){margin: none;}
 	#name{left: -5px; padding-top: 10px;}
-	.sidebar{font-size: 18px;}
-	#blue{width: 100%; bottom: 85%; padding-bottom: 95px;}
+	.sidebar{font-size: 18px; display: inline-block;}
+	#blue{width: 100%; height: 100px;}
 	nav{position: absolute; top: 55px; left: 10px; padding-bottom: 95px;}
-	.slide{width: 100%; bottom:55%; float: none; top: calc(100% - 215px);}
-	.sidebar{display: inline-block;}
 	.links{bottom:5%; left: 40%; position: relative;}
 }
 @media (min-width: 401px) and (max-width: 640px){
 	.images{width: 100%; margin: 150px 0px 0px 0px;}
 	#name{left: -5px; padding-top: 10px;}
 	.sidebar{font-size: 18px;}
-	#blue{width: 100%; bottom: 85%; padding-bottom: 95px;}
-	.slide{width: 100%; bottom:55%; float: none; top: calc(100% - 215px);}
+	#blue{width: 100%; height: 100px;}
 	.sidebar{display: inline-block;}
 	nav{top:55px; left: 10px;}
 	.links{bottom:5%; right: 50%;}

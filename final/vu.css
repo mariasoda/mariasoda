@@ -48,49 +48,51 @@ table {
 }
 /*start of my code*/
 
+body{
+	font-family: Usual;
+}
 .sidebar, #name{
 	text-decoration: none;
 	background-color: #3333ff;
 	color: #ffffff;
-	font-family: sans-serif;
 }
 
 #name{
 	color: #ffffff;
-	font-family: sans-serif;
-	font-size: 32px;
-    top: 4%;
-    left: 5%;
-    margin-top: 0px;
+	font-size: 20px;
+    top: 15px;
+    left: 2px;
+    margin-top: 10px;
 	position: absolute;
 	padding: 0px 10px 0px 20px;
 }
 
 nav{
-	position: fixed;
-    top: 15%;
-    left: 2%;
-    padding-left: 2px;
+	position: absolute;
+    top: 60px;
+    left: 20px;
 }
 
 .sidebar{
-	font-size: 20px;
+	font-size: 18px;
 	padding: 4px;
 	display: block;
 }
 
 #blue{
 	background-color: #3333ff;
-	width: 215px;
+	width: 190px;
+	height: 190px;
 	position: absolute;
 	top: 0px;
-	bottom: 0px;
 	left: 0%;
 }
 
 #name:hover, .sidebar:hover{
 	color: #ffccff;
 }
+
+/*body*/
 
 .body{
 	width: calc(100% - 215px);
