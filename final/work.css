@@ -83,7 +83,7 @@ nav{
 	background-color: #3333ff;
 	width: 190px;
 	height: 190px;
-	position: absolute;
+	position: fixed;
 	top: 0px;
 	left: 0%;
 }
@@ -94,22 +94,20 @@ nav{
 
 /*body*/
 
-#hundred{
-	background-image: src=("file:///images/100.jpg");
-	width: 200px;
-	background-repeat: none;
-}
-
 .container{
 	padding-left: 130px;
 }
 
 #work{
-	padding-left: 250px;
+	padding: 15px 0px 50px 250px;
+}
+
+h1{
+	font-weight: 600;
 }
 
 .images{
-	margin-left: 250px;
+	margin-left: 210px;
 }
 
 .portfolio{
@@ -118,29 +116,36 @@ nav{
 }
 
 .portfolio:hover{
+	opacity: .5;
 
 }
 
 .imagelink{
-	width: 35%;
+	width: 33%;
 	display: inline-block;
 	text-decoration: none;
+	color: #000;
+}
+
+.imagelink:hover{
+	font-weight: 600;
 }
 
 .imagelink:nth-child(odd) {
   margin-left: 45px;
   margin-right: 10%;
-  margin-top: 60px;
+  margin-bottom: 60px;
 }
 
-.title{font-size: 14px;
+.title{
+	padding-top: 10px;
+	font-size: 14px;
     line-height: 1.5em;
     color: #000;
-    text-align: center;
 }
 
 .title:hover{
-	display: block;
+	color: #3333ff;
 }
 
 /*footer*/
@@ -203,13 +208,20 @@ nav{
 	.links{bottom:5%; right: 50%;}
 }
 
-@media (min-width: 641px) and (max-width: 823px){
+@media (min-width: 641px) and (max-width: 750px){
+	
+
+}
+
+@media (min-width: 751px) and (max-width: 1000px){
 	.social{width: 25px; height: 25px;}
 	#in{width: 20px;}
 	#behance{width: 20px;}
 	#git{width: 25px;}
+	.images{margin-left: 110px;}
+	.imagelink{width: 40%;}
 }
 
-@media (min-width: 824px) and (max-width: 982px){
+@media (min-width: 1001px) and (max-width: 982px){
 
 }

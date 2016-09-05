@@ -7,15 +7,14 @@ $(document).ready(function(){
 	$("#button").click(function(e){
 		e.preventDefault();
 		$(".lamb").text($("#friend-name").val());
-
 	});
 
 	$("#two").hover(function(){
-	$("#ptwo").fadeIn(4000);
+		$("#ptwo").fadeIn(4000);
 	});
 
 	$("#lambtwo").click(function(){
-	$("#ptwo").fadeIn(3000);
+		$("#ptwo").fadeIn(3000);
 	});
 
 
