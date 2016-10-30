@@ -65,7 +65,7 @@ table {
 #name{
 	color: #ffffff;
     top: 15px;
-    left: 2px;
+    left: 5px;
     margin-top: 10px;
 	position: fixed;
 	padding: 0px 10px 0px 20px;
@@ -83,10 +83,6 @@ nav{
     display: none;
 }
 
-#nav{
-	display: none;
-}
-
 .sidebar{
 	padding: 4px;
 	display: block;
@@ -102,8 +98,15 @@ nav{
 	z-index: 10;
 }
 
-#name:hover, .sidebar:hover{
+#myname:hover, .sidebar:hover{
 	color: #ffccff;
+}
+
+#arrow{
+	font-size: 10px;
+	position: fixed;
+	left: 10px;
+	top: 30px;
 }
 
 section{
@@ -175,7 +178,7 @@ a{
 	.links{bottom:5%; right: 50%;
 }
 
-@media (min-width: 641px) and (max-width: 823px){
+@media handheld(min-width: 641px) and (max-width: 823px){
 	.social{width: 25px; height: 25px;}
 	#in{width: 20px;}
 	#behance{width: 20px;}

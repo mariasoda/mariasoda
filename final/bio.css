@@ -52,6 +52,16 @@ table {
 body{
 	font-family: Usual;
 }
+#arrow{
+	font-size: 10px;
+	position: fixed;
+	left: 10px;
+	top: 30px;
+}
+#myname{
+	position: relative;
+}
+
 .sidebar, #name{
 	text-decoration: none;
 	background-color: #3333ff;
@@ -62,7 +72,7 @@ body{
 	color: #ffffff;
 	font-size: 20px;
     top: 15px;
-    left: 2px;
+    left: 5px;
     margin-top: 10px;
 	position: absolute;
 	padding: 0px 10px 0px 20px;
@@ -102,59 +112,31 @@ a{
 }
 
 .bio{
-	width: calc(100% - 215px);
-    margin-left: 216px;
+	width: 400px;
+	left: 250px;
+	top: 250px;
     position: fixed;
-    padding-right: 10%;
-    display: inline-block;
 }
 
 .biopic{
-	width: 5%px;
-	left: 20%;
-	top: 10%;
-	width: 35%;
+	position: fixed;
+	width: 400px;
+	left: 200px;
+	top: 350px;
 }
-
-.biopic:nth-child(odd) {
-  margin-left: 10%;
-  margin-right: 10%;
-  margin-top: 10%;
-}
-
 
 h2{
-	font-family: sans-serif;
-	font-size: 36px;
-	color: #3333ff;
+	font-family: Neuton;
+	font-size: 60px;
 	position: fixed;
 	left: 40%;
 	top: 5%
 }
 
-p{
-	width: 50%;
-	display: inline-block;
-	font-family: sans-serif;
-	text-decoration: none;
-}
-
-h3{
-	font-family: sans-serif;
-	font-size: 20px;
-	padding-top: 20px;
-	padding-bottom: 10px;
-}
 .contact{
 	display: block;
 	text-decoration: none;
 	font-family: sans-serif;
-}
-
-.bio:nth-child(odd) {
-  margin-left: 10%;
-  margin-right: 10%;
-  margin-top: 10%;
 }
 /*footer*/
 
