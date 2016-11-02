@@ -103,7 +103,11 @@ nav{
 }
 
 h1{
-	font-weight: 600;
+	font-family: Neuton;
+	font-size: 60px;
+	position: fixed;
+	left: 40%;
+	top: 5%
 }
 
 .images{

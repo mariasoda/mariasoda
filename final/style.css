@@ -78,7 +78,7 @@ table {
 
 nav{
 	position: fixed;
-    top: 60px;
+    top: 50px;
     left: 20px;
     display: none;
 }
@@ -109,6 +109,8 @@ nav{
 	top: 30px;
 }
 
+/*body*/
+
 section{
 	position: absolute;
 }
@@ -125,6 +127,13 @@ section{
 
 a{
 	color: #000;
+}
+
+.label{
+	background-color: Blue;
+	color: White;
+	position: fixed;
+	bottom: 0px;
 }
 
 /*footer*/
