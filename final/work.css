@@ -51,6 +51,14 @@ table {
 body{
 	font-family: Usual;
 }
+
+#arrow{
+	font-size: 10px;
+	position: fixed;
+	left: 10px;
+	top: 30px;
+}
+
 .sidebar, #name{
 	text-decoration: none;
 	background-color: #3333ff;
@@ -59,17 +67,17 @@ body{
 
 #name{
 	color: #ffffff;
-	font-size: 20px;
     top: 15px;
-    left: 2px;
+    left: 5px;
     margin-top: 10px;
-	position: absolute;
+	position: fixed;
 	padding: 0px 10px 0px 20px;
+	font-size: 20px;
 }
 
 nav{
 	position: absolute;
-    top: 60px;
+    top: 50px;
     left: 20px;
 }
 
@@ -86,6 +94,7 @@ nav{
 	position: fixed;
 	top: 0px;
 	left: 0%;
+	font-family: Usual;
 }
 
 #name:hover, .sidebar:hover{
@@ -93,10 +102,6 @@ nav{
 }
 
 /*body*/
-
-.container{
-	padding-left: 130px;
-}
 
 #work{
 	padding: 15px 0px 50px 250px;
@@ -106,8 +111,6 @@ h1{
 	font-family: Neuton;
 	font-size: 60px;
 	position: fixed;
-	left: 40%;
-	top: 5%
 }
 
 .images{
@@ -131,9 +134,6 @@ h1{
 	color: #000;
 }
 
-.imagelink:hover{
-	font-weight: 600;
-}
 
 .imagelink:nth-child(odd) {
   margin-left: 45px;

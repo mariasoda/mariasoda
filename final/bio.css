@@ -52,14 +52,12 @@ table {
 body{
 	font-family: Usual;
 }
+
 #arrow{
 	font-size: 10px;
 	position: fixed;
 	left: 10px;
 	top: 30px;
-}
-#myname{
-	position: relative;
 }
 
 .sidebar, #name{
@@ -70,17 +68,17 @@ body{
 
 #name{
 	color: #ffffff;
-	font-size: 20px;
     top: 15px;
     left: 5px;
     margin-top: 10px;
-	position: absolute;
+	position: fixed;
 	padding: 0px 10px 0px 20px;
+	font-size: 20px;
 }
 
 nav{
 	position: absolute;
-    top: 60px;
+    top: 50px;
     left: 20px;
 }
 
@@ -94,9 +92,10 @@ nav{
 	background-color: #3333ff;
 	width: 190px;
 	height: 190px;
-	position: absolute;
+	position: fixed;
 	top: 0px;
 	left: 0%;
+	font-family: Usual;
 }
 
 #name:hover, .sidebar:hover{
@@ -105,36 +104,47 @@ nav{
 
 /*body*/
 
+
+
+#container{
+	margin: 25px 25px 25px 250px;
+	display: block;
+}
+
 a{
 	text-decoration: none;
 	font-size: 11px;
-	font-family: sans-serif;
 }
 
-.bio{
+#biopic{
+	width: 300px;
+	padding-top: 100px;
+	float: left;
+	margin: 10px;
+}
+
+#bio{
 	width: 400px;
 	left: 250px;
 	top: 250px;
-    position: fixed;
-}
-
-.biopic{
-	position: fixed;
-	width: 400px;
-	left: 200px;
-	top: 350px;
+    margin: 100px 250px 50px 50px;
+    float: right;
 }
 
 h1{
 	font-family: Neuton;
 	font-size: 60px;
 	position: fixed;
-	left: 40%;
+	margin: 10px;
 	top: 5%
 }
 
 p{
 	margin-bottom: 10px;
+	width: 230px;
+	font-size: 14px;
+	line-height: 16px;
+	right: 55px;
 }
 
 .contact{

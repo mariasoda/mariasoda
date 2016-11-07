@@ -48,6 +48,10 @@ table {
 }
 /*start of my code*/
 
+body{
+	font-family: Usual;
+}
+
 #container{
 	position: relative;
 	font-family: Usual;
