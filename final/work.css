@@ -52,21 +52,12 @@ body{
 	font-family: Usual;
 }
 
-#arrow{
-	font-size: 10px;
-	position: fixed;
-	left: 10px;
-	top: 30px;
-}
-
 .sidebar, #name{
 	text-decoration: none;
-	background-color: #3333ff;
-	color: #ffffff;
+	color: #000000;
 }
 
 #name{
-	color: #ffffff;
     top: 15px;
     left: 5px;
     margin-top: 10px;
@@ -87,16 +78,6 @@ nav{
 	display: block;
 }
 
-#blue{
-	background-color: #3333ff;
-	width: 190px;
-	height: 190px;
-	position: fixed;
-	top: 0px;
-	left: 0%;
-	font-family: Usual;
-}
-
 #name:hover, .sidebar:hover{
 	color: #ffccff;
 }
@@ -107,95 +88,60 @@ nav{
 	padding: 15px 0px 50px 250px;
 }
 
-h1{
-	font-family: Neuton;
-	font-size: 60px;
-	position: fixed;
-}
-
 .images{
 	margin-left: 210px;
+	margin-right: 50px;
+}
+
+.container{
+	position: relative;
+	width: 100%;
 }
 
 .portfolio{
 	width: 100%;
-	border: .25px solid gray;
+	display: block;
+	height: auto;
 }
 
-.portfolio:hover{
-	opacity: .5;
-
+.overlay{
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	height: 100%;
+	width: 100%;
+	opacity: 0;
+	transition: .5s ease;
+	background-color: #000000;
 }
 
-.imagelink{
-	width: 33%;
-	display: inline-block;
-	text-decoration: none;
-	color: #000;
+.container:hover .overlay{
+	opacity: .75;
 }
 
-
-.imagelink:nth-child(odd) {
-  margin-left: 45px;
-  margin-right: 10%;
-  margin-bottom: 60px;
-}
-
-.title{
-	padding-top: 10px;
-	font-size: 14px;
-    line-height: 1.5em;
-    color: #000;
-}
-
-.title:hover{
-	color: #3333ff;
+.text{
+	color: white;
+	font-size: 50px;
+	position: absolute;
+	bottom: 20%;
+	right: 50%;
+	-ms-transform: translate(-50%, -50%);
 }
 
 /*footer*/
 
 .links{
+	display: block;
 	position: fixed;
 	left: 2%;
 	bottom: 5%;
 }
-.social{
-	display: inline-block;
-	background-color: #000000;
-	width: 30px;
-	height: 30px;
-	border-radius: 50%;
-	position: relative;
-}
-
-.social:hover{
-	background-color: #ffccff;
-}
-
-#in{
-	position: absolute;
-	left: 3px;
-	top: 2px;
-	width: 25px;
-}
-
-#behance{
-	position: absolute;
-	width: 25px;
-	left: 3px;
-	top: 3px;
-}
-
-#git{
-	position: absolute;
-	width: 31px;
-	top: -1px;
-}
-
+/*
 @media (min-width: 1px) and (max-width: 400px){
 	.images{width: 85%; margin: 100px 0px 50px 0px; padding: 20px;}
-	.imagelink{display: block; width: 100%;}
-	.imagelink:nth-child(odd){margin: none;}
+	.container{display: block; width: 100%;}
 	#name{left: -5px; padding-top: 10px;}
 	.sidebar{font-size: 18px; display: inline-block;}
 	#blue{width: 100%; height: 100px;}
@@ -223,9 +169,9 @@ h1{
 	#behance{width: 20px;}
 	#git{width: 25px;}
 	.images{margin-left: 110px;}
-	.imagelink{width: 40%;}
+	.container{width: 40%;}
 }
 
 @media (min-width: 1001px) and (max-width: 982px){
 
-}
+}*/
